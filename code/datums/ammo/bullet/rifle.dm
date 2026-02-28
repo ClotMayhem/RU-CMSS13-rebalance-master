@@ -8,7 +8,7 @@
 	name = "rifle bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 
-	damage = 40
+	damage = 50
 	penetration = ARMOR_PENETRATION_TIER_1
 	accurate_range = 16
 	accuracy = HIT_ACCURACY_TIER_4
@@ -20,7 +20,7 @@
 
 /datum/ammo/bullet/rifle/holo_target
 	name = "holo-targeting rifle bullet"
-	damage = 30
+	damage = 40
 	/// inflicts this many holo stacks per bullet hit
 	var/holo_stacks = 10
 	/// modifies the default cap limit of 100 by this amount
@@ -34,13 +34,13 @@
 
 /datum/ammo/bullet/rifle/holo_target/hunting
 	name = "holo-targeting hunting bullet"
-	damage = 25
+	damage = 35
 	holo_stacks = 15
 
 /datum/ammo/bullet/rifle/explosive
 	name = "explosive rifle bullet"
 
-	damage = 25
+	damage = 35
 	accurate_range = 22
 	accuracy = 0
 	shell_speed = AMMO_SPEED_TIER_4
@@ -59,13 +59,13 @@
 /datum/ammo/bullet/rifle/ap
 	name = "armor-piercing rifle bullet"
 
-	damage = 30
+	damage = 40
 	penetration = ARMOR_PENETRATION_TIER_8
 
 // Basically AP but better. Focused at taking out armour temporarily
 /datum/ammo/bullet/rifle/ap/toxin
 	name = "toxic rifle bullet"
-	var/acid_per_hit = 7
+	var/acid_per_hit = 15
 	var/organic_damage_mult = 3
 
 /datum/ammo/bullet/rifle/ap/toxin/on_hit_mob(mob/M, obj/projectile/P)
@@ -87,7 +87,7 @@
 	name = "wall-penetrating rifle bullet"
 	shrapnel_chance = 0
 
-	damage = 35
+	damage = 45
 	penetration = ARMOR_PENETRATION_TIER_10
 
 /datum/ammo/bullet/rifle/ap/penetrating/set_bullet_traits()
@@ -99,7 +99,7 @@
 /datum/ammo/bullet/rifle/le
 	name = "armor-shredding rifle bullet"
 
-	damage = 20
+	damage = 30
 	penetration = ARMOR_PENETRATION_TIER_4
 	pen_armor_punch = 5
 
@@ -107,7 +107,7 @@
 	name = "high-explosive armor-piercing rifle bullet"
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	damage = 55//big damage, doesn't actually blow up because thats stupid.
+	damage = 65//big damage, doesn't actually blow up because thats stupid.
 	penetration = ARMOR_PENETRATION_TIER_8
 
 /datum/ammo/bullet/rifle/rubber
@@ -124,7 +124,7 @@
 	shrapnel_chance = 0
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 30
+	damage = 40
 	shell_speed = AMMO_SPEED_TIER_4
 	accuracy = -HIT_ACCURACY_TIER_2
 	damage_falloff = DAMAGE_FALLOFF_TIER_10
@@ -142,7 +142,7 @@
 	flags_ammo_behavior = AMMO_BALLISTIC
 	accurate_range_min = 4
 
-	damage = 55
+	damage = 65
 	scatter = -SCATTER_AMOUNT_TIER_8
 	penetration= ARMOR_PENETRATION_TIER_7
 	shell_speed = AMMO_SPEED_TIER_6
@@ -151,7 +151,7 @@
 	name = "A19 high velocity incendiary bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 40
+	damage = 50
 	accuracy = HIT_ACCURACY_TIER_4
 	scatter = -SCATTER_AMOUNT_TIER_8
 	penetration= ARMOR_PENETRATION_TIER_5
@@ -167,7 +167,7 @@
 	name = "A19 high velocity impact bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 40
+	damage = 50
 	accuracy = -HIT_ACCURACY_TIER_2
 	scatter = -SCATTER_AMOUNT_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_10
@@ -194,12 +194,12 @@
 /datum/ammo/bullet/rifle/mar40
 	name = "heavy rifle bullet"
 
-	damage = 55
+	damage = 65
 
 /datum/ammo/bullet/rifle/type71
 	name = "heavy rifle bullet"
 
-	damage = 55
+	damage = 65
 	penetration = ARMOR_PENETRATION_TIER_3
 
 /datum/ammo/bullet/rifle/type71/setup_faction_clash_values()
@@ -210,7 +210,7 @@
 /datum/ammo/bullet/rifle/type71/ap
 	name = "heavy armor-piercing rifle bullet"
 
-	damage = 40
+	damage = 50
 	penetration = ARMOR_PENETRATION_TIER_10
 
 
@@ -218,7 +218,7 @@
 	name = "heavy high-explosive armor-piercing rifle bullet"
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	damage = 65
+	damage = 75
 	penetration = ARMOR_PENETRATION_TIER_10
 
 
@@ -227,20 +227,20 @@
 /datum/ammo/bullet/rifle/l23
 	name = "8.88mm rifle bullet"
 
-	damage = 50
+	damage = 60
 	penetration = ARMOR_PENETRATION_TIER_2
 
 /datum/ammo/bullet/rifle/l23/ap
 	name = "8.88mm armor-piercing rifle bullet"
 
-	damage = 40
+	damage = 50
 	penetration = ARMOR_PENETRATION_TIER_10
 
 /datum/ammo/bullet/rifle/l23/heap
 	name = "8.88mm high-explosive armor-piercing rifle bullet"
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	damage = 65
+	damage = 75
 	penetration = ARMOR_PENETRATION_TIER_10
 
 /datum/ammo/bullet/rifle/l23/incendiary
@@ -249,7 +249,7 @@
 	shrapnel_chance = 0
 	flags_ammo_behavior = AMMO_BALLISTIC
 
-	damage = 40
+	damage = 50
 	shell_speed = AMMO_SPEED_TIER_4
 	accuracy = -HIT_ACCURACY_TIER_2
 	damage_falloff = DAMAGE_FALLOFF_TIER_10
@@ -286,3 +286,16 @@
 	damage = 0
 	stamina_damage = 22
 	shrapnel_chance = 0
+
+/datum/ammo/bullet/rifle/l64
+
+	name = "8.88x51 squash-head bullet"
+
+	damage = 50
+	penetration = ARMOR_PENETRATION_TIER_1
+
+/datum/ammo/bullet/rifle/l64/ap
+	name = "8.88x51 armour piercing squash-head bullet"
+
+	damage = 40
+	penetration = ARMOR_PENETRATION_TIER_8

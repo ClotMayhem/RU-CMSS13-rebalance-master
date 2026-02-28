@@ -18,7 +18,7 @@
 
 	accurate_range = 8
 	max_range = 8
-	damage = 70
+	damage = 80
 	penetration = ARMOR_PENETRATION_TIER_4
 	accuracy = HIT_ACCURACY_TIER_3
 	damage_armor_punch = 2
@@ -50,7 +50,7 @@
 	sound_bounce = "energy_bounce"
 	hit_effect_color = "#00aeff"
 	sound_override = 'sound/weapons/gun_es7lethal.ogg'
-	damage = 60
+	damage = 70
 	penetration = ARMOR_PENETRATION_TIER_8
 	accuracy = HIT_ACCURACY_TIER_5
 
@@ -114,7 +114,7 @@
 
 	accuracy = HIT_ACCURACY_TIER_2
 	max_range = 12
-	damage = 55
+	damage = 65
 	penetration= ARMOR_PENETRATION_TIER_1
 	handful_state = "incendiary_slug"
 
@@ -144,7 +144,7 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 30
+	damage = 40
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_7
@@ -163,7 +163,7 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 30
+	damage = 40
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_7
@@ -184,7 +184,7 @@
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_5
 	accurate_range = 4
 	max_range = 4
-	damage = 65
+	damage = 75
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_1
@@ -213,7 +213,7 @@
 /datum/ammo/bullet/shotgun/buckshot/masterkey
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread/masterkey
 
-	damage = 55
+	damage = 65
 
 /datum/ammo/bullet/shotgun/buckshot/masterkey/on_hit_mob(mob/M,obj/projectile/P)
 	knockback(M,P,1)
@@ -226,7 +226,7 @@
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 4
 	max_range = 6
-	damage = 65
+	damage = 75
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
 	penetration = ARMOR_PENETRATION_TIER_1
@@ -236,7 +236,7 @@
 	pen_armor_punch = 0
 
 /datum/ammo/bullet/shotgun/spread/masterkey
-	damage = 20
+	damage = 30
 
 /*
 					8 GAUGE SHOTGUN AMMO
@@ -251,7 +251,7 @@
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_3
 	accurate_range = 3
 	max_range = 3
-	damage = 75
+	damage = 85
 	penetration = 0
 	shell_speed = AMMO_SPEED_TIER_2
 	damage_armor_punch = 0
@@ -272,7 +272,7 @@
 	handful_state = "heavy_dragonsbreath"
 	multiple_handful_name = TRUE
 	damage_type = BURN
-	damage = 60
+	damage = 70
 	accurate_range = 3
 	max_range = 4
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/heavy/buckshot/dragonsbreath/spread
@@ -390,7 +390,7 @@
 
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
-	damage = 55
+	damage = 65
 	max_range = 5
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_3
 	penetration = ARMOR_PENETRATION_TIER_1

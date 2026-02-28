@@ -145,8 +145,8 @@ As such, don't expect any values assigned to common firearms to even consider ho
 #define FIRE_DELAY_TIER_SNIPER 15
 
 /// Shotgun Delays
-#define FIRE_DELAY_TIER_SHOTGUN_SLOW 2.5 SECONDS // Heavy or damaged shotguns, KS-23, etc.
-#define FIRE_DELAY_TIER_SHOTGUN_BASE 2 SECONDS // Replaces previous shotgun value which was Tier_7 (5)*4
+#define FIRE_DELAY_TIER_SHOTGUN_SLOW 2 SECONDS // Heavy or damaged shotguns, KS-23, etc.
+#define FIRE_DELAY_TIER_SHOTGUN_BASE 1 SECONDS // Replaces previous shotgun value which was Tier_7 (5)*4
 #define FIRE_DELAY_TIER_SHOTGUN_COLONY 1.6 SECONDS // Used by the HG shotguns.
 #define FIRE_DELAY_TIER_SHOTGUN_COMBAT 1.4 SECONDS // Replaces previous combat shotgun value which was Tier_5 (7)*2 ...Wow that's confusing.
 #define FIRE_DELAY_TIER_SHOTGUN_DEATHSQUAD 0.6 SECONDS // For adminspawn ERTs, MARSOC, etc.
@@ -262,6 +262,7 @@ As such, don't expect any values assigned to common firearms to even consider ho
 #define AMMO_SPEED_TIER_4 4
 #define AMMO_SPEED_TIER_5 5
 #define AMMO_SPEED_TIER_6 6
+#define AMMO_SPEED_TIER_7 7
 
 /*
 ////ARMOR PENETRATION////
